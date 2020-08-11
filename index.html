@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sťahovanie24 - Vysťahujeme Vás rýchlo a výhodne!</title>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="styles/slideshow.css" />
+    <link rel="stylesheet" type="text/css" href="styles/aboutus.css" />
+    <link rel="stylesheet" type="text/css" href="styles/services.css" />
+    <link rel="stylesheet" type="text/css" href="styles/references.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
+
+    <link rel="stylesheet" type="text/css" href="styles/footer.css" />
+</head>
+
+<body>
+    <a id="arrow" href="#header">
+        <ion-icon id="icon" name="arrow-up-outline"></ion-icon>
+    </a>
+    
+    <div id="header">
+        <div class="content">
+            <img class="logo" src="assets/logo-2.png" />
+
+            <div style="flex: 1;"></div>
+            
+            <div class="menu">
+                <a class="item" href="index.html">Domov</a>
+                <a class="item" id="service-link" href="#services">Služby</a>
+                <a class="item" href="#aboutus">O nás</a>
+                <a class="item" href="#references">Referencie</a>
+            </div>
+            
+            <a class="button" href="pages/contact.html">Kontaktujte nás</a>
+            
+            <a class="menu-button" id="menu-button" onclick="showMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+    </div>
+    <div id="dropdown">
+        <div class="content">
+            <a class="item" href="pages/stahovanie.html">Sťahovanie</a>
+            <a class="item" href="pages/balenie.html">Balenie</a>
+            <a class="item" href="pages/autodoprava.html">Autodoprava</a>
+            <a class="item" href="pages/skladovanie.html">Skladovanie</a>
+            <a class="item" href="pages/interier.html">Interiérové služby</a>
+            <a class="item" href="pages/montaz.html">Montáž a demontáž</a>
+        </div>
+    </div> 
+    <div id="header-info">
+        <h2 class="text">Sme Vám k dispozícií 24 hodín denne na čísle <a href="tel: +421-948-710-231" style="color: white; text-decoration: none;">+421 948 710 231</a>.</h2>
+    </div>
+    <div id="mobile-menu">
+        <div class="content" id="mobile-menu-content">
+            <a class="item" href="index.html">
+                <ion-icon class="icon" name="home-outline"></ion-icon>
+                <h5 class="link">Domov</h5>
+            </a>
+            <a class="item" href="#services">
+                <ion-icon class="icon" name="hammer-outline"></ion-icon>
+                <h5 class="link">Služby</h5>
+            </a>
+            <a class="item" href="#aboutus">
+                <ion-icon class="icon" name="people-outline"></ion-icon>
+                <h5 class="link">O nás</h5>
+            </a>
+            <a class="item" href="#references">
+                <ion-icon class="icon" name="documents-outline"></ion-icon>
+                <h5 class="link">Referencie</h5>
+            </a>
+            <a class="item" href="pages/contact.html">
+                <ion-icon class="icon" name="person-outline"></ion-icon>
+                <h5 class="link">Kontakt</h5>
+            </a>
+        </div>
+    </div>
+
+    <div id="slideshow">
+            <div class="content">
+                <div class="inner" id="slides">
+                    <div class="slide">
+                        <img class="image" src="assets/slide-1-new.png" />
+                        
+                        <div class="info">
+                            <h2 class="title">Sťahovanie Bratislava</h2>
+                            <p class="text">Sťahovanie nebolo ešte nikdy jednoduchšie, o všetko sa postaráme za Vás. Cenovo výhodné ponuky v širokom výbere sťahovacích služieb v Bratislave a po celom Slovensku</p>
+                            <a class="button" href="pages/stahovanie.html">Zisti viac</a>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="image" src="assets/slide-2-new.png" />
+                        
+                        <div class="info">
+                            <h2 class="title">Spokojnosť na prvom mieste</h2>
+                            <p class="text">V Sťahovaní24 je pre nás prvoradé, aby ste s našimi službami boli plne spokojní. Preto nás neváhajte kontaktovať 24 hodín denne, pomôžeme Vám s akýmikoľvek otázkami</p>
+                            <a class="button" href="pages/autodoprava.html">Zisti viac</a>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img class="image" src="assets/slide-3-new.png" />
+                        
+                        <div class="info">
+                            <h2 class="title">Autodoprava</h2>
+                            <p class="text">Odvezieme Vám akýkoľvek náklad, aký budete potrebovať. Ponúkame veľké sťahovacie autá, náklad Vám naložíme aj vyložíme. Prepravujeme v Bratislave a po celom Slovensku</p>
+                            <a class="button" href="pages/contact.html">Zisti viac</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <img class="button" id="arrow-left" src="assets/arrow-left.png" onclick="previousSlide()" style="opacity: 0;" />
+                <img class="button" id="arrow-right" src="assets/arrow-right.png" onclick="nextSlide()" />
+            </div>
+        </div>
+
+    <div id="aboutus">
+        <img style="display: none; position: absolute; left: 0; top: 0; width: 30%; height: 100%" src="assets/svg1.png" />
+
+        <div class="leftPanel">
+            <img class="image" src="assets/image-about.png" />
+        </div>
+
+        <div class="rightPanel">
+            <h2 class="title">Kto sme?</h2>
+            <p class="text">
+                Spoločnosť Sťahovanie24 vznikla v roku 2004 v Bratislave a od svojich počiatkov sa špecializuje na sťahovanie a služby so sťahovaním súvisiace. V roku 2009 získalo Sťahovanie24 novú podobu a vznikla spoločnosť so zameraním na sťahovanie v Bratislave a okolí, medzinárodné sťahovanie a autodopravu, EMER group, s.r.o. Za ten čas "má na konte" Sťahovanie24 množstvo skúseností z oblasti sťahovania a autodopravy, čo dokazuje aj mnoho spokojných zákazníkov, ktorých nájdete v sekcii referencie. Ak teda hľadáte stabilnú spoločnosť s dlhoročnými skúsenosťami so sťahovaním, autodopravou a profesionálnym prístupom, ste na správnej adrese. Pretože MY VIEME AKO.
+            </p>
+        </div>
+    </div>
+
+    <div id="services">
+        <!--<img style="position: absolute; right: 0; top: 0; width: 30%; height: 60%" src="assets/svg2.png" />-->
+        <!--<img style="position: absolute; left: 0; bottom: 0; width: 15%; height: 40%" src="assets/svg3.png" />-->
+
+        <h2 class="title">Široký výber služieb, ktoré<br />splnia všetky Vaše potreby</h2>
+        
+        <p class="page-description">
+            Vyberte si z našej širokej ponuky služieb, ktoré zahŕňajú všetko, čo budete potrebovať pri kompletnom sťahovaní bytu alebo domu.
+        </p>
+
+        <div class="data">
+            <div class="content">
+                <a class="item" href="pages/stahovanie.html">
+                    <img class="image" src="assets/icon_stahovanie.png" />
+                    <h3 class="heading">Sťahovanie</h3>
+                    <p class="text">
+                        Sťahovanie ešte nikdy nebolo jednoduchšie, postaráme sa o všetko za Vás.
+                    </p>
+                </a>
+
+                <a class="item" href="pages/balenie.html">
+                    <img class="image" src="assets/icon_balenie.png" />
+                    <h3 class="heading">Balenie</h3>
+                    <p class="text">
+                        Pred sťahovaním sa postaráme o zabalenie všetkých predmetov.
+                    </p>
+                </a>
+            </div>
+
+            <div class="content">
+                <a class="item" href="pages/autodoprava.html">
+                    <img class="image" src="assets/icon_preprava.png" />
+                    <h3 class="heading">Autodoprava</h3>
+                    <p class="text">
+                        Odvezieme Vám akýkoľvek náklad, aký budete potrebovať prepraviť.
+                    </p>
+                </a>
+                
+                <a class="item" href="pages/skladovanie.html">
+                    <img class="image" src="assets/icon_skladovanie.png" />
+                    <h3 class="heading">Skladovanie</h3>
+                    <p class="text">
+                        V prípade potreby uskladnenia akéhokoľvek nákladu Vám radi pomôžeme.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="content">
+                <a class="item" href="pages/interier.html">
+                    <img class="image" src="assets/icon_interier.png" />
+                    <h3 class="heading">Interiérové služby</h3>
+                    <p class="text">
+                        Keď pred alebo po sťahovaní potrebujete upratať vaše bývanie, sme tu pre Vás.
+                    </p>
+                </a>
+
+                <a class="item" href="pages/montaz.html">
+                    <img class="image" src="assets/icon_montaz.png" />
+                    <h3 class="heading">Montáž</h3>
+                    <p class="text">
+                        Taktiež ponúkame doplnkové služby ako montáž a demontáž nábytku a iných predmetov.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="references">
+        <!--<img style="position: absolute; left: 0; bottom: 0; width: 90%; height: 30%" src="assets/svg5.png" />-->
+
+        <h2 class="title">Naši spokojní zákazníci</h2>
+        
+        <p class="page-description">
+            S našimi službami sme boli pomocou aj pre známe firmy a organizácie a s ktorými spolupráca bola veľmi pozitívna. Niektoré z nich si môžete pozrieť nižšie.
+        </p>
+
+        <div class="logos">
+            <div class="content">
+                <div class="item"><img class="image" src="assets/logo_procare.jpg" /></div>
+                <div class="item"><img class="image" src="assets/logo_vsmu.png" /></div>
+                <div class="item"><img class="image" src="assets/logo_dhl.png" /></div>
+                <div class="item"><img class="image" src="assets/logo_sberbank.jpg" /></div>
+                <div class="item"><img class="image" src="assets/logo_abcklima.jpg" /></div>
+            </div>
+
+            <div class="content">
+                <div class="item"><img class="image" src="assets/logo_suzuki.jpg" /></div>
+                <div class="item"><img class="image" src="assets/logo_slovnaft.png" /></div>
+                <div class="item"><img class="image" src="assets/logo_uk.png" /></div>
+                <div class="item"><img class="image" src="assets/logo_slovan.png" /></div>
+                <div class="item"><img class="image" src="assets/logo_ecopress.jpg" /></div>
+            </div>
+        </div>
+
+        <div class="recommendations">
+            <div class="recommendation">
+                <h3 class="name">Matej Bodnár</h3>
+
+                <p class="text">
+                    Sťahovanie24 odviedlo skvelú prácu. Vysťahovali nás rýchlo, komunikácia bola veľmi príjemná a na cene sa dalo tiež príjemne dohodnúť. V budúcnosti sa určite s celou rodinou znovu obrátime na Sťahovanie24.
+                </p>
+            </div>
+
+            <div class="recommendation">
+                <h3 class="name">Zuzana Gálová</h3>
+
+                <p class="text">
+                    Sťahovanie24 odviedlo skvelú prácu. Vysťahovali nás rýchlo, komunikácia bola veľmi príjemná a na cene sa dalo tiež príjemne dohodnúť. V budúcnosti sa určite s celou rodinou znovu obrátime na Sťahovanie24.
+                </p>
+            </div>
+
+            <div class="recommendation">
+                <h3 class="name">Tomáš Tehlár</h3>
+
+                <p class="text">
+                    Sťahovanie24 odviedlo skvelú prácu. Vysťahovali nás rýchlo, komunikácia bola veľmi príjemná a na cene sa dalo tiež príjemne dohodnúť. V budúcnosti sa určite s celou rodinou znovu obrátime na Sťahovanie24.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="contact">
+        <h2 class="title">Kontaktujte nás 24 hodín denne</h2>
+        <p class="text">
+            Naše služby ponúkaju niečo pre každého, kto potrebuje pomoc pri sťahovaní. Taktiež sú dokopy jeden kompletný balík služieb, ktorý sa postará o všetko dokopy, keď neviete ako na to. S akýmikoľvek otázkami, objenávkami alebo radami sa na nás môžete obrátiť 24 hodín denne na našom neustále aktívnom telefónnom čísle.
+        </p>
+        
+        <a class="button" href="pages/contact.html">Kontaktujte nás</a>
+    </div>
+
+    <div id="footer">
+        <div class="content">
+            <div class="section">
+                <img class="logo" src="assets/logo-2.png" />
+            </div>
+            
+            <div class="section">
+                <h2 class="sectionTitle">Menu</h2>
+
+                <a class="sectionInfo" href="#header">Domov</a>
+                <a class="sectionInfo" href="#services">Služby</a>
+                <a class="sectionInfo" href="#aboutus">O nás</a>
+                <a class="sectionInfo" href="#references">Referencie</a>
+                <a class="sectionInfo" href="pages/contact.html">Kontakt</a>
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Služby</h2>
+
+                <a class="sectionInfo" href="pages/stahovanie.html">Sťahovanie</a>
+                <a class="sectionInfo" href="pages/balenie.html">Balenie</a>
+                <a class="sectionInfo" href="pages/autodoprava.html">Autodoprava</a>
+                <a class="sectionInfo" href="pages/skladovanie.html">Skladovanie</a>
+                <a class="sectionInfo" href="pages/interier.html">Interiérové služby</a>
+                <a class="sectionInfo" href="pages/montaz.html">Montáž a demontáž</a>
+
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Kontakt</h2>
+
+                <a class="sectionInfo" href="http://maps.google.com/?q=stahovanie24">Žilinská 5, 811 05 Bratislava</a>
+                <a class="sectionInfo" href="tel: +421-948-710-231">+421 948 710 231</a>
+                <h3 class="sectionInfo"></h3>
+                <h3 class="sectionInfo">Opera real s.r.o.</h3>
+                <h3 class="sectionInfo">IČO: 45 326 053</h3>
+                <h3 class="sectionInfo">DIČ: 2022947806</h3>
+            </div>
+
+            <!--<div class="section">
+                <h2 class="sectionTitle">Právne</h2>
+
+                <h3 class="sectionInfo">Ochrana osobných údajov</h3>
+                <h3 class="sectionInfo">Nastavenia Cookies</h3>
+            </div>-->
+        </div>
+
+        <p class="bottom">© 2020 Sťahovanie 24 | Web created by <a style="color: #3D6FBF;" href="http://advision.sk">AdVision</a></p>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/arrow.js"></script>
+</body>
+
+</html>

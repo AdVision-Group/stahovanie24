@@ -1,0 +1,133 @@
+@media only screen and (min-width: 900px) {
+    #footer {
+        background-color: rgb(72, 81, 78);
+        background-color: #383838;
+        background-color: rgb(38, 38, 38);
+    }
+
+    #footer .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding: 40px;
+    }
+
+    #footer .content .section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 300px;
+    }
+    
+    #footer .content .section .logo {
+        width: 120px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+    #footer .content .section .sectionTitle {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+
+        margin-bottom: 40px;
+    }
+
+    #footer .content .section .sectionInfo {
+        display: block;
+
+        color: rgb(180, 180, 180);
+        font-size: 18px;
+        font-weight: normal;
+        text-decoration: none;
+
+        transition: color 150ms;
+
+        padding-bottom: 10px;
+    }
+
+    #footer .content .section a:hover {
+        color: white;
+    }
+
+    #footer .bottom {
+        color: gray;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+
+        width: 100%;
+
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #footer {
+        width: 100%;
+        
+        background-color: #383838;
+        background-color: rgb(38, 38, 38);
+    }
+
+    #footer .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 40px;
+    }
+
+    #footer .content .section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 300px;
+        
+        margin-bottom: 20px;
+    }
+    
+    #footer .content .section .logo {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+    }
+
+    #footer .content .section .sectionTitle {
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+
+        margin-bottom: 20px;
+    }
+
+    #footer .content .section .sectionInfo {
+        display: block;
+
+        color: rgb(180, 180, 180);
+        font-size: 18px;
+        font-weight: normal;
+        text-decoration: none;
+
+        transition: color 150ms;
+
+        padding-bottom: 10px;
+    }
+
+    #footer .content .section a:hover {
+        color: white;
+    }
+
+    #footer .bottom {
+        color: gray;
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+
+        padding: 20px;
+    }
+}

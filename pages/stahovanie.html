@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sťahovanie24 - Sťahovanie</title>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/header.css" />
+
+    <link rel="stylesheet" type="text/css" href="../styles/subpage.css" />
+
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css" />
+
+    <style>
+        #stahovanie_bytov {
+            display: flex;
+        }
+
+        #stahovanie_kancelarii,
+        #stahovanie_bremien,
+        #stahovanie_klavirov,
+        #stahovanie_trezorov {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <a id="arrow" href="#header">
+        <ion-icon id="icon" name="arrow-up-outline"></ion-icon>
+    </a>
+    
+    <div id="header">
+        <div class="content">
+            <img class="logo" src="../assets/logo-2.png" />
+
+            <div style="flex: 1;"></div>
+            
+            <div class="menu">
+                <a class="item" href="../index.html">Domov</a>
+                <a class="item" id="service-link" href="../index.html#services">Služby</a>
+                <a class="item" href="../index.html#aboutus">O nás</a>
+                <a class="item" href="../index.html#references">Referencie</a>
+            </div>
+            
+            <a class="button" href="contact.html">Kontaktujte nás</a>
+            
+            <a class="menu-button" id="menu-button" onclick="showMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+    </div>
+    <div id="dropdown">
+        <div class="content">
+            <a class="item" href="stahovanie.html">Sťahovanie</a>
+            <a class="item" href="balenie.html">Balenie</a>
+            <a class="item" href="autodoprava.html">Autodoprava</a>
+            <a class="item" href="skladovanie.html">Skladovanie</a>
+            <a class="item" href="interier.html">Interiérové služby</a>
+            <a class="item" href="montaz.html">Montáž a demontáž</a>
+        </div>
+    </div> 
+    <div id="header-info">
+        <h2 class="text">Sme Vám k dispozícií 24 hodín denne na čísle <a href="tel: +421-948-710-231" style="color: white; text-decoration: none;">+421 948 710 231</a>.</h2>
+    </div>
+    <div id="mobile-menu">
+        <div class="content" id="mobile-menu-content">
+            <a class="item" href="../index.html">
+                <ion-icon class="icon" name="home-outline"></ion-icon>
+                <h5 class="link">Domov</h5>
+            </a>
+            <a class="item" href="../index.html#services">
+                <ion-icon class="icon" name="hammer-outline"></ion-icon>
+                <h5 class="link">Služby</h5>
+            </a>
+            <a class="item" href="../index.html#aboutus">
+                <ion-icon class="icon" name="people-outline"></ion-icon>
+                <h5 class="link">O nás</h5>
+            </a>
+            <a class="item" href="../index.html#references">
+                <ion-icon class="icon" name="documents-outline"></ion-icon>
+                <h5 class="link">Referencie</h5>
+            </a>
+            <a class="item" href="contact.html">
+                <ion-icon class="icon" name="person-outline"></ion-icon>
+                <h5 class="link">Kontakt</h5>
+            </a>
+        </div>
+    </div>
+
+    <img class="image" src="../assets/slide-1-new.png" />
+
+    <div id="categories">
+        <h2 class="title">Sťahovanie</h2>
+        
+        <div class="content">
+            <a class="item" href="#stahovanie_bytov" onclick="changeContent('stahovanie_bytov')">
+                <img class="image" src="../assets/image-stahovanie-bytov.jpeg" />
+                <h3 class="heading">Sťahovanie bytov</h3>
+            </a>
+
+            <a class="item" href="#stahovanie_kancelarii" onclick="changeContent('stahovanie_kancelarii')">
+                <img class="image" src="../assets/image-stahovanie-kancelarii.jpeg" />
+                <h3 class="heading">Sťahovanie kancelárií</h3>
+            </a>
+
+            <a class="item" href="#stahovanie_bremien" onclick="changeContent('stahovanie_bremien')">
+                <img class="image" src="../assets/image-stahovanie-kancelarii.jpeg" />
+                <h3 class="heading">Sťahovanie bremien</h3>
+            </a>
+
+            <a class="item" href="#stahovanie_klavirov" onclick="changeContent('stahovanie_klavirov')">
+                <img class="image" src="../assets/image-stahovanie-klavirov.jpeg" />
+                <h3 class="heading">Sťahovanie klavírov</h3>
+            </a>
+
+            <a class="item" href="#stahovanie_trezorov" onclick="changeContent('stahovanie_trezorov')">
+                <img class="image" src="../assets/image-stahovanie-kancelarii.jpeg" />
+                <h3 class="heading">Sťahovanie trezorov</h3>
+            </a>
+        </div>
+    </div>
+    
+    <!--<div class="info">
+        <h2 class="title">Sťahovanie</h2>
+
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+    </div>-->
+
+    <div class="pricing" id="stahovanie_bytov">
+        <!--<img style="position: absolute; left: 0; top: 0; width: 26%; height: 80%" src="../assets/svg4.png" />-->
+
+        <h3 class="title">Cenník sťahovania bytov</h3>
+        
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už od roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+
+        <div class="panel">
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Presťahovanie jednej izby</h4>
+                <h4 class="price">40.00€</h4>
+            </div>
+
+            <p class="addition">Štandardná izba predstavuje 8m kubických nábytku a iných vecí</p>
+            <p class="addition">Do štandardného zariadenia bytu sa nepočítajú ťažké bremená nad 100kg (veľké skrine, trezory...)</p>
+            <p class="addition">Špeciálne požiadavky riešime vždy individuálne s predchádzajúcou obhliadkou alebo dohovorom</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Príplatok za jedno prekonané poschodie a jednu izbu bez výťahu</h4>
+                <h4 class="price">5.00€</h4>
+            </div>
+
+            <p class="addition">Platí sa v prípade, že nie je k dispozícii výťah</p>
+            <p class="addition">1 poschodie je 16-18 schodov</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Príplatok za jedno prekonané poschodie a jednu izbu s malým výťahom</h4>
+                <h4 class="price">3.00€</h4>
+            </div>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Sťahovanie viac ako štyroch izieb (rodinný dom a podobne)</h4>
+                <h4 class="price">dohodou</h4>
+            </div>
+
+            <p class="addition">Výrazné zľavy prípade sťahovania väčšieho množstva izieb</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Manipulácia, balenie, montáž, demontáž na hodinu a pracovníka</h4>
+                <h4 class="price">4.00€ - 9.00€</h4>
+            </div>
+
+            <p class="addition">Minimálna sadzba na deň za jedného pracovníka je 15.00 €</p>
+        </div>
+
+        <p class="comment">
+            Doprava, obalový materiál nie je zahrnutý v cene sťahovania.
+        </p>
+    </div>
+    <div class="pricing" id="stahovanie_kancelarii">
+        <!--<img style="position: absolute; left: 0; top: 0; width: 26%; height: 80%" src="../assets/svg4.png" />-->
+
+        <h3 class="title">Cenník sťahovania kancelárií</h3>
+        
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+
+        <div class="panel">
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Presťahovanie jednej kancelárie mimo budovy</h4>
+                <h4 class="price">47.00€</h4>
+            </div>
+
+            <p class="addition">Štandardná kancelária sú 2 pracovné stoly, 1 malý stôl, 2 kontajnery, 2 stoličky, 4 skrine, 10 krabíc</p>
+            <p class="addition">Do štandardného zariadenia kancelárie sa nepočítajú ťažké bremená nad 100kg (kopírky, trezory...)</p>
+            <p class="addition">Špeciálne požiadavky riešime vždy individuálne s predchádzajúcou obhliadkou alebo dohovorom</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Presťahovanie jednej kancelárie v rámci budovy</h4>
+                <h4 class="price">35.00€</h4>
+            </div>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Príplatok za jedno prekonané poschodie a jednu kanceláriu bez výťahu</h4>
+                <h4 class="price">6.00€</h4>
+            </div>
+
+            <p class="addition">Platí sa v prípade, že nie je k dispozícii výťah</p>
+            <p class="addition">1 poschodie je 16-18 schodov</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Jedno pracovné miesto mimo budovy</h4>
+                <h4 class="price">25.00€</h4>
+            </div>
+
+            <p class="addition">Štandardné pracovné miesto pozostáva z 1 pracovného stola, 1 stolíka, 1 kontajner, 2 skrine, 4 krabice</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Jedno pracovné miesto v rámci budovy</h4>
+                <h4 class="price">20.00€</h4>
+            </div>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Príplatok za jedno prekonané poschodie a jedno pracovné miesto bez výťahu</h4>
+                <h4 class="price">2.50€</h4>
+            </div>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Sťahovanie viac ako piatich kancelárií</h4>
+                <h4 class="price">dohodou</h4>
+            </div>
+
+            <p class="addition">Výrazné zľavy prípade sťahovania väčšieho množstva kancelárií alebo pracovných miest</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Manipulácia, balenie, montáž, demontáž na hodinu a pracovníka</h4>
+                <h4 class="price">4.00€ - 9.00€</h4>
+            </div>
+
+            <p class="addition">Minimálna sadzba na deň za jedného pracovníka je 15.00 €</p>
+        </div>
+
+        <p class="comment">
+            Doprava, obalový materiál nie je zahrnutý v cene sťahovania.
+        </p>
+    </div>
+    <div class="pricing" id="stahovanie_bremien">
+        <!--<img style="position: absolute; left: 0; top: 0; width: 26%; height: 80%" src="../assets/svg4.png" />-->
+
+        <h3 class="title">Cenník sťahovania bremien</h3>
+        
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+
+        <div class="panel">
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">100-199kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">20.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 0.80 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">200-299kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">30.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 1.10 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">300-399kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">50.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 1.50 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">400-499kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">55.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 2.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">500-599kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">76.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 3.50 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">600-699kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">100.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 4.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Nad 700kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">dohodou</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie 1 schodu - dohodou</p>
+        </div>
+
+        <p class="comment">
+            Za prekonanie jedného metra naviac sa platí príplatok vo výške 5% z ceny za manipuláciu po rovine 20 m.V prípade, že je možné použiť mechanické a hydraulické zariadenia si príplatok neúčtujeme. Doprava, balenie a obalový materiál nie je zahrnutý v cene sťahovania.
+        </p>
+    </div>
+    <div class="pricing" id="stahovanie_klavirov">
+        <!--<img style="position: absolute; left: 0; top: 0; width: 26%; height: 80%" src="../assets/svg4.png" />-->
+
+        <h3 class="title">Cenník sťahovania klavírov</h3>
+        
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+
+        <div class="panel">
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Piano</h4>
+                <h4 class="price">25.00€</h4>
+            </div>
+
+            <p class="addition">Cena za prekonanie jedného poschodia je 10.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Krídlo malé</h4>
+                <h4 class="price">50.00€</h4>
+            </div>
+
+            <p class="addition">Cena za prekonanie jedného poschodia je 14.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Krídlo stredné</h4>
+                <h4 class="price">60.00€</h4>
+            </div>
+
+            <p class="addition">Cena za prekonanie jedného poschodia je 23.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Koncertné krídlo</h4>
+                <h4 class="price">dohodou</h4>
+            </div>
+
+            <p class="addition">Cena za prekonanie jedného poschodia dohodou</p>
+        </div>
+
+        <p class="comment">
+            Jedno poschodie je 16-18 schodov. Doprava, balenie a obalový materiál nie je zahrnutý v cene sťahovania.
+        </p>
+    </div>
+    <div class="pricing" id="stahovanie_trezorov">
+        <!--<img style="position: absolute; left: 0; top: 0; width: 26%; height: 80%" src="../assets/svg4.png" />-->
+
+        <h3 class="title">Cenník sťahovania trezorov</h3>
+        
+        <p class="text">
+            Naša sťahovacia firma zabezpečuje sťahovanie bytov už roku 2004. Sťahovanie s nami sa pre vás stane bezstarostnou záležitosťou, pretože vám ponúkame komplexné služby z oblasti sťahovania bytov a o všetky záležitosti sa s radosťou postaráme za vás. Na vykonávané sťahovanie bytov sa vzťahuje poistenie jednotlivej poistnej udalosti do výšky 50 000 €. V prípade potreby vám samozrejme vieme v krátkom čase zabezpečiť požadované pripoistenie.
+        </p>
+
+        <div class="panel">
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">100-199kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">20.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 0.80 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">200-299kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">30.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 1.10 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">300-399kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">50.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 1.50 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">400-499kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">55.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 2.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">500-599kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">76.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 3.50 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">600-699kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">100.00€</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie jedného schodu 4.00 €</p>
+
+            <div class="item">
+                <div class="line"></div>
+                <h4 class="name">Nad 700kg (sadzba za manipuláciu po rovine 20m)</h4>
+                <h4 class="price">dohodou</h4>
+            </div>
+
+            <p class="addition">Sadzba za prekonanie 1 schodu - dohodou</p>
+        </div>
+
+        <p class="comment">
+            Za prekonanie jedného metra naviac sa platí príplatok vo výške 5% z ceny za manipuláciu po rovine 20 m.V prípade, že je možné použiť mechanické a hydraulické zariadenia si príplatok neúčtujeme. Doprava, balenie a obalový materiál nie je zahrnutý v cene sťahovania.
+        </p>
+    </div>
+
+    <div id="footer">
+        <div class="content">
+            <div class="section">
+                <img class="logo" src="../assets/logo-2.png" />
+            </div>
+            
+            <div class="section">
+                <h2 class="sectionTitle">Menu</h2>
+
+                <a class="sectionInfo" href="../index.html">Domov</a>
+                <a class="sectionInfo" href="../index.html#services">Služby</a>
+                <a class="sectionInfo" href="../index.html#aboutus">O nás</a>
+                <a class="sectionInfo" href="../index.html#references">Referencie</a>
+                <a class="sectionInfo" href="contact.html">Kontakt</a>
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Služby</h2>
+
+                <a class="sectionInfo" href="stahovanie.html">Sťahovanie</a>
+                <a class="sectionInfo" href="balenie.html">Balenie</a>
+                <a class="sectionInfo" href="autodoprava.html">Autodoprava</a>
+                <a class="sectionInfo" href="skladovanie.html">Skladovanie</a>
+                <a class="sectionInfo" href="interier.html">Interiérové služby</a>
+                <a class="sectionInfo" href="montaz.html">Montáž a demontáž</a>
+
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Kontakt</h2>
+
+                <a class="sectionInfo" href="http://maps.google.com/?q=stahovanie24">Žilinská 5, 811 05 Bratislava</a>
+                <a class="sectionInfo" href="tel: +421-948-710-231">+421 948 710 231</a>
+                <h3 class="sectionInfo"></h3>
+                <h3 class="sectionInfo">Opera real s.r.o.</h3>
+                <h3 class="sectionInfo">IČO: 45 326 053</h3>
+                <h3 class="sectionInfo">DIČ: 2022947806</h3>
+            </div>
+
+            <!--<div class="section">
+                <h2 class="sectionTitle">Právne</h2>
+
+                <h3 class="sectionInfo">Ochrana osobných údajov</h3>
+                <h3 class="sectionInfo">Nastavenia Cookies</h3>
+            </div>-->
+        </div>
+
+        <p class="bottom">© 2020 Sťahovanie 24 | Web created by <a style="color: #3D6FBF;" href="http://advision.sk">AdVision</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script src="../scripts/dropdown.js"></script>
+    <script>
+        function changeContent(category) {
+            document.getElementById("stahovanie_bytov").style.display = "none";
+            document.getElementById("stahovanie_kancelarii").style.display = "none";
+            document.getElementById("stahovanie_bremien").style.display = "none";
+            document.getElementById("stahovanie_klavirov").style.display = "none";
+            document.getElementById("stahovanie_trezorov").style.display = "none";
+
+            if (category == "stahovanie_bytov") {
+                document.getElementById("stahovanie_bytov").style.display = "flex";
+            } else if (category == "stahovanie_kancelarii") {
+                document.getElementById("stahovanie_kancelarii").style.display = "flex";
+            } else if (category == "stahovanie_bremien") {
+                document.getElementById("stahovanie_bremien").style.display = "flex";
+            } else if (category == "stahovanie_klavirov") {
+                document.getElementById("stahovanie_klavirov").style.display = "flex";
+            } else if (category == "stahovanie_trezorov") {
+                document.getElementById("stahovanie_trezorov").style.display = "flex";
+            }
+        }
+
+    </script> <!-- DISPLAY PRICING ON CATEGORIES ITEM CLICK -->
+    <script src="../scripts/arrow.js"></script>
+</body>
+
+</html>

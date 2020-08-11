@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sťahovanie24 - Kontakt</title>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css" />
+    
+    <style>
+        @media only screen and (min-width: 1000px) {
+            #content {
+                padding: 50px;
+            }
+
+            #content .heading {
+                color: black;
+                font-size: 35px;
+                font-weight: bold;
+
+                margin-left: 6px;
+                margin-bottom: 50px;
+            }
+
+            #content .content {
+                display: flex;
+                flex-direction: row;
+            }
+
+            #content .content .form {
+                flex: 1;
+            }
+
+            #content .content .form .contact-form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content .content .form .contact-form .field {
+                height: 40px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #content .content .form .contact-form .text {
+                height: 200px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                resize: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding: 10px;
+            }
+
+            #content .content .form .contact-form .submit {
+                height: 40px;
+
+                color: white;
+                font-size: 15px;
+                font-weight: normal;
+                text-align: center;
+
+                outline: none;
+                border: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                margin-top: 30px;
+
+                background-color: #3D6FBF;
+            }
+
+            #content .content .info {
+                flex: 1;
+
+                padding-left: 100px;
+            }
+
+            #content .content .info .item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-bottom: 20px;
+                
+                transition: color 150ms;
+            }
+            
+            #content .content .info a:hover > .text {
+                color: #3D6FBF;
+            }
+
+            #content .content .info .item .icon {
+                width: 30px;
+                height: 30px;
+
+                color: #3D6FBF;
+
+                margin-right: 20px;
+            }
+
+            #content .content .info .item .text {
+                color: gray;
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+        
+        @media only screen and (max-width: 1000px) and (min-width: 700px) {
+            #content {
+                padding: 50px;
+            }
+
+            #content .heading {
+                color: black;
+                font-size: 35px;
+                font-weight: bold;
+
+                margin-left: 6px;
+                margin-bottom: 50px;
+            }
+
+            #content .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content .content .form {
+                margin-bottom: 50px;
+            }
+
+            #content .content .form .contact-form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content .content .form .contact-form .field {
+                height: 40px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #content .content .form .contact-form .text {
+                height: 200px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                resize: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding: 10px;
+            }
+
+            #content .content .form .contact-form .submit {
+                height: 40px;
+
+                color: white;
+                font-size: 15px;
+                font-weight: normal;
+                text-align: center;
+
+                outline: none;
+                border: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                margin-top: 30px;
+
+                background-color: #3D6FBF;
+            }
+
+            #content .content .info {
+                
+            }
+
+            #content .content .info .item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-bottom: 20px;
+                
+                transition: color 150ms;
+            }
+            
+            #content .content .info a:hover > .text {
+                color: #3D6FBF;
+            }
+
+            #content .content .info .item .icon {
+                width: 30px;
+                height: 30px;
+
+                color: #3D6FBF;
+
+                margin-right: 20px;
+            }
+
+            #content .content .info .item .text {
+                color: gray;
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+        
+        @media only screen and (max-width: 700px) {
+            #content {
+                padding: 20px;
+            }
+
+            #content .heading {
+                color: black;
+                font-size: 35px;
+                font-weight: bold;
+
+                margin-left: 6px;
+                margin-bottom: 50px;
+            }
+
+            #content .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content .content .form {
+                margin-bottom: 50px;
+            }
+
+            #content .content .form .contact-form {
+                display: flex;
+                flex-direction: column;
+            }
+
+            #content .content .form .contact-form .field {
+                height: 40px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            #content .content .form .contact-form .text {
+                height: 200px;
+
+                color: black;
+                font-size: 15px;
+                font-weight: normal;
+
+                outline: none;
+                border: 1px solid lightgray;
+
+                resize: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                padding: 10px;
+            }
+
+            #content .content .form .contact-form .submit {
+                height: 40px;
+
+                color: white;
+                font-size: 15px;
+                font-weight: normal;
+                text-align: center;
+
+                outline: none;
+                border: none;
+
+                border-radius: 5px;
+
+                margin: 6px;
+                margin-top: 30px;
+
+                background-color: #3D6FBF;
+            }
+
+            #content .content .info {
+                
+            }
+
+            #content .content .info .item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-bottom: 20px;
+                
+                transition: color 150ms;
+            }
+            
+            #content .content .info a:hover > .text {
+                color: #3D6FBF;
+            }
+
+            #content .content .info .item .icon {
+                width: 30px;
+                height: 30px;
+
+                color: #3D6FBF;
+
+                margin-right: 20px;
+            }
+
+            #content .content .info .item .text {
+                color: gray;
+                font-size: 20px;
+                font-weight: normal;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a id="arrow" href="#header">
+        <ion-icon id="icon" name="arrow-up-outline"></ion-icon>
+    </a>
+    
+    <div id="header">
+        <div class="content">
+            <img class="logo" src="../assets/logo-2.png" />
+
+            <div style="flex: 1;"></div>
+            
+            <div class="menu">
+                <a class="item" href="../index.html">Domov</a>
+                <a class="item" id="service-link" href="../index.html#services">Služby</a>
+                <a class="item" href="../index.html#aboutus">O nás</a>
+                <a class="item" href="../index.html#references">Referencie</a>
+            </div>
+            
+            <a class="button" href="contact.html">Kontaktujte nás</a>
+            
+            <a class="menu-button" id="menu-button" onclick="showMenu()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </a>
+        </div>
+    </div>
+    <div id="dropdown">
+        <div class="content">
+            <a class="item" href="stahovanie.html">Sťahovanie</a>
+            <a class="item" href="balenie.html">Balenie</a>
+            <a class="item" href="autodoprava.html">Autodoprava</a>
+            <a class="item" href="skladovanie.html">Skladovanie</a>
+            <a class="item" href="interier.html">Interiérové služby</a>
+            <a class="item" href="montaz.html">Montáž a demontáž</a>
+        </div>
+    </div> 
+    <div id="header-info">
+        <h2 class="text">Sme Vám k dispozícií 24 hodín denne na čísle <a href="tel: +421-948-710-231" style="color: white; text-decoration: none;">+421 948 710 231</a>.</h2>
+    </div>
+    <div id="mobile-menu">
+        <div class="content" id="mobile-menu-content">
+            <a class="item" href="../index.html">
+                <ion-icon class="icon" name="home-outline"></ion-icon>
+                <h5 class="link">Domov</h5>
+            </a>
+            <a class="item" href="../index.html#services">
+                <ion-icon class="icon" name="hammer-outline"></ion-icon>
+                <h5 class="link">Služby</h5>
+            </a>
+            <a class="item" href="../index.html#aboutus">
+                <ion-icon class="icon" name="people-outline"></ion-icon>
+                <h5 class="link">O nás</h5>
+            </a>
+            <a class="item" href="../index.html#references">
+                <ion-icon class="icon" name="documents-outline"></ion-icon>
+                <h5 class="link">Referencie</h5>
+            </a>
+            <a class="item" href="contact.html">
+                <ion-icon class="icon" name="person-outline"></ion-icon>
+                <h5 class="link">Kontakt</h5>
+            </a>
+        </div>
+    </div>
+
+    <div id="content">
+        <h2 class="heading">Neváhaje nás kontaktovať 24 hodín denne</h2>
+        
+        <div class="content">
+            <div class="form">
+                <form class="contact-form" action="../scripts/contact.php" method="post">
+                    <input class="field" type="text" name="name" placeholder="Vaše meno" required>
+                    <input class="field" type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea class="text" name="message" placeholder="Správa" rows="10" required></textarea>
+
+                    <input class="submit" name="submit" type="submit" value="Poslať správu">
+                </form>
+            </div>
+            
+            <div class="info">
+                <a class="item" href="www.stahovanie24.sk">
+                    <ion-icon class="icon" name="home"></ion-icon>
+                    <h3 class="text">www.stahovanie24.sk</h3>
+                </a>
+                <a class="item" href="tel: +421-948-710-231">
+                    <ion-icon class="icon" name="call"></ion-icon>
+                    <h3 class="text">+421 948 710 231</h3>
+                </a>
+                <a class="item" href="http://maps.google.com/?q=stahovanie24">
+                    <ion-icon class="icon" name="location"></ion-icon>
+                    <h3 class="text">Žilinská 5, 811 05 Bratislava</h3>
+                </a>
+                
+                <br />
+                <br />
+                
+                <div class="item">
+                    <ion-icon class="icon" name="compass"></ion-icon>
+                    <h3 class="text">Opera real s.r.o.</h3>
+                </div>
+                <div class="item">
+                    <ion-icon class="icon" name="document-text"></ion-icon>
+                    <h3 class="text">IČO: 45 326 053</h3>
+                </div>
+                <div class="item">
+                    <ion-icon class="icon" name="documents"></ion-icon>
+                    <h3 class="text">DIČ: 2022947806</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--
+    <div id="contact">
+        <img style="z-index: 1; position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;" src="assets/photo_stahovanie.jpg" />
+
+        <div class="contactPanel">
+            <div class="content">
+                <div class="infoPanel">
+                    <h3 class="heading">Kontaktné údaje</h3>
+
+                    <p class="text">
+                        Kontaktujte nás kedykoľvek, 24 hodín denne, 7 dní v týždni. Sme Vám neustále k dispozícií.
+                    </p>
+
+                    <h4 class="infoHeading">Adresa</h4>
+                    <h5 class="infoText">Žilinská 5</h5>
+                    <h5 class="infoText">811 05 Bratislava</h5>
+
+                    <h4 class="infoHeading">Kontakt</h4>
+                    <h5 class="infoText">+421 948 710 231</h5>
+
+                    <h4 class="infoHeading">Fakturačné údaje</h4>
+                    <h5 class="infoText">Opera real s.r.o.</h5>
+                    <h5 class="infoText">IČO: 45 326 053</h5>
+                    <h5 class="infoText">DIČ: 2022947806</h5>
+                </div>
+
+                <div class="formPanel">
+                    <h3 class="heading">Pošli nám správu</h3>
+
+                    <form class="form" action="scripts/contact.php" method="post">
+                        <input class="nameField" type="text" name="name" placeholder="Vaše meno" required>
+                        <input class="emailField" type="email" name="email" placeholder="Váš e-mail" required>
+                        <textarea class="textField" name="message" placeholder="Správa" rows="10" required></textarea>
+
+                        <input class="submitButton" name="submit" type="submit" value="Poslať správu">
+                    </form>
+                </div>
+            </div>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.6379825363647!2d17.110187015652354!3d48.155784157871615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c8951887b8ad1%3A0xc8a674e9e12306c2!2sS%C5%A5ahovanie%2024%20Bratislava!5e0!3m2!1ssk!2ssk!4v1592989703440!5m2!1ssk!2ssk" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    -->
+
+    <div id="footer">
+        <div class="content">
+            <div class="section">
+                <img class="logo" src="../assets/logo-2.png" />
+            </div>
+            
+            <div class="section">
+                <h2 class="sectionTitle">Menu</h2>
+
+                <a class="sectionInfo" href="../index.html">Domov</a>
+                <a class="sectionInfo" href="../index.html#services">Služby</a>
+                <a class="sectionInfo" href="../index.html#aboutus">O nás</a>
+                <a class="sectionInfo" href="../index.html#references">Referencie</a>
+                <a class="sectionInfo" href="contact.html">Kontakt</a>
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Služby</h2>
+
+                <a class="sectionInfo" href="stahovanie.html">Sťahovanie</a>
+                <a class="sectionInfo" href="balenie.html">Balenie</a>
+                <a class="sectionInfo" href="autodoprava.html">Autodoprava</a>
+                <a class="sectionInfo" href="skladovanie.html">Skladovanie</a>
+                <a class="sectionInfo" href="interier.html">Interiérové služby</a>
+                <a class="sectionInfo" href="montaz.html">Montáž a demontáž</a>
+
+            </div>
+
+            <div class="section">
+                <h2 class="sectionTitle">Kontakt</h2>
+
+                <a class="sectionInfo" href="http://maps.google.com/?q=stahovanie24">Žilinská 5, 811 05 Bratislava</a>
+                <a class="sectionInfo" href="tel: +421-948-710-231">+421 948 710 231</a>
+                <h3 class="sectionInfo"></h3>
+                <h3 class="sectionInfo">Opera real s.r.o.</h3>
+                <h3 class="sectionInfo">IČO: 45 326 053</h3>
+                <h3 class="sectionInfo">DIČ: 2022947806</h3>
+            </div>
+
+            <!--<div class="section">
+                <h2 class="sectionTitle">Právne</h2>
+
+                <h3 class="sectionInfo">Ochrana osobných údajov</h3>
+                <h3 class="sectionInfo">Nastavenia Cookies</h3>
+            </div>-->
+        </div>
+
+        <p class="bottom">© 2020 Sťahovanie 24 | Web created by <a style="color: #3D6FBF;" href="http://advision.sk">AdVision</a></p>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../scripts/slideshow.js"></script>
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/dropdown.js"></script>
+    <script src="../scripts/scroll.js"></script>
+    <script src="../scripts/arrow.js"></script>
+    <script src="../scripts/scroll.js"></script>
+</body>
+
+</html>

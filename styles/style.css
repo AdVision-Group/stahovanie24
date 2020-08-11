@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Work Sans", sans-serif;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1100px) {
+    .title {
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+        
+        z-index: 11;
+    }
+    
+    .page-description {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 30px;
+        
+        width: 50%;
+        
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .title {
+        color: black;
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 45px;
+        
+        z-index: 11;
+    }
+    
+    .page-description {
+        color: gray;
+        font-size: 20px;
+        font-weight: normal;
+        text-align: center;
+        line-height: 30px;
+        
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #arrow {    
+        position: relative;
+
+        opacity: 0;
+
+        transition: opacity 500ms;
+
+        z-index: 14;
+    }
+
+    #icon {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+
+        padding: 10px;
+
+        border-radius: 1000px;
+
+        background-color: #3D6FBF;
+
+        width: 30px;
+        height: 30px;
+
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #arrow {    
+        position: relative;
+
+        opacity: 0;
+
+        transition: opacity 500ms;
+
+        z-index: 14;
+    }
+
+    #icon {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+
+        padding: 10px;
+
+        border-radius: 1000px;
+
+        background-color: #3D6FBF;
+
+        width: 25px;
+        height: 25px;
+
+        color: white;
+    }
+}
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
